@@ -1,13 +1,8 @@
-Grayscale Jekyll theme
+Clackamas Volunteer Search and Rescue
 =========================
 
-Jekyll theme based on [Grayscale bootstrap theme ](http://ironsummitmedia.github.io/startbootstrap-grayscale/)
+This is the repository for the Clackamas Volunteer Search and Rescue website.
 
-## Demo
-View this jekyll theme in action [here](https://jeromelachaud.github.io/grayscale-theme)
+The codebase is derived from a Jekyll theme.
 
-## Screenshot
-![screenshot](https://raw.githubusercontent.com/jeromelachaud/grayscale-theme/master/screenshot.png)
-
-=========
-For more details, read the [documentation](http://jekyllrb.com/)
+For more about the codebase, read the [documentation](http://jekyllrb.com/).
