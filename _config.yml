@@ -15,16 +15,17 @@ footer: Clackamas Volunteer Search and Rescue
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: https://twitter.com/SBootstrap
+    url: #
   - title: facebook
     url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Allows for looping through images
+defaults:
+  - scope:
+      path: "img"
+    values:
+      image: true
