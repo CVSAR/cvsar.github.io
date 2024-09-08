@@ -414,3 +414,10 @@ body {
     width: 66.66666667%;
     margin: 0 auto;
 }
+
+@media(max-width: 600px) {
+    .center {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
