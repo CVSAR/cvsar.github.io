@@ -1,7 +1,7 @@
 # Site settings
 title: Clackamas Volunteer Search and Rescue
-email: cvsarinfo@clackamassar.org
-url: https://clacakmasvolunteersar.org
+email: your-email@domain.com
+url: https://cvsar.github.io
 description: "We support Clackamas County Search and Rescue by ensuring the highest level of training and equipment to provide the best possible response and outcome for every SAR mission in Clackamas County and beyond."
 
 # Color settings (hex-codes without the leading hash-tag)
@@ -10,7 +10,7 @@ color:
   links: '#ef740d'
 
 # Footer settings
-footer: Clackamas Volunteer Search and Rescue
+footer: Your Website
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:

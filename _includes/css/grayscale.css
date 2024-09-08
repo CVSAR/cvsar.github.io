@@ -382,4 +382,7 @@ body {
 
 .gallery img {
     padding-bottom: 30px;
+
+.lh-med {
+    line-height: 1.5;
 }
