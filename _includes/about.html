@@ -9,7 +9,7 @@
 
 <!-- image gallery -->
 
-<div class="container">    
+<div class="container soft-margin">    
     <div class="row gallery">
       <div class="col-sm-6 col-md-4 col-lg-3">
         <a href="/img/gallery/1.jpg">
@@ -89,7 +89,7 @@
     </div>
   </div>
   <script>
-    baguetteBox.run(".gallery", {
-      animation: "slideIn"
+    window.addEventListener('load', function() {
+      baguetteBox.run('.gallery');
     });
   </script>

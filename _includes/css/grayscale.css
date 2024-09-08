@@ -383,3 +383,7 @@ body {
 .gallery img {
     padding-bottom: 2em;
 }
+
+.soft-margin {
+    margin-top: 4em;
+}
