@@ -390,3 +390,8 @@ body {
 .soft-margin {
     margin-top: 4em;
 }
+
+.center {
+    width: 66.66666667%;
+    margin: 0 auto;
+}
