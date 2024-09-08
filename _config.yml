@@ -18,10 +18,3 @@ social:
 # Build settings
 markdown: kramdown
 permalink: pretty
-
-# Allows for looping through images
-defaults:
-  - scope:
-      path: "img"
-    values:
-      image: true
