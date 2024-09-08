@@ -262,7 +262,10 @@ a:focus {
 }
 
 .download-section {
-    width: 100%;
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
     padding: 50px 0;
     color: #fff;
     background: linear-gradient(rgba(0,0,0,0.8), transparent), url(/img/cvsar-2.jpg) no-repeat center center scroll;
@@ -381,7 +384,7 @@ body {
 }
 
 .gallery img {
-    padding-bottom: 2em;
+    padding-bottom: 30px;
 }
 
 .soft-margin {
