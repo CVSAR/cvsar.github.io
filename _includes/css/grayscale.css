@@ -379,3 +379,7 @@ body {
 .lh-med {
     line-height: 1.5;
 }
+
+.gallery img {
+    padding-bottom: 2em;
+}
