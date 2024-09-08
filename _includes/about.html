@@ -9,7 +9,7 @@
 
 <!-- image gallery -->
 
-<div class="container">    
+<div class="container soft-margin">    
     <div class="row gallery">
       <div class="col-sm-6 col-md-4 col-lg-3">
         <a href="/img/gallery/1.jpg">
@@ -81,15 +81,10 @@
           <img class="img-responsive"src="/img/gallery/14.jpg" alt="A dog paw with an orange and black patch on the paw that reads CSAR K9 Air Scent">
         </a>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <a href="/img/gallery/15.jpg">
-          <img class="img-responsive"src="/img/gallery/15.jpg" alt="Several search and rescue members in helmets along a rope line in the forest">
-        </a>
-      </div>
     </div>
   </div>
   <script>
-    baguetteBox.run(".gallery", {
-      animation: "slideIn"
+    window.addEventListener('load', function() {
+      baguetteBox.run('.gallery');
     });
   </script>
