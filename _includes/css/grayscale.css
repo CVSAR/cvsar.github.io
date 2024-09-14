@@ -427,3 +427,34 @@ body {
 section {
     overflow-x: hidden;
 }
+
+/* Animated counter */
+
+.counter-container {
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.count-area {
+    position: relative;
+    background:#000;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+.count-area-content {
+    margin-top: 30px;
+}
+.count-area i {
+    font-size: 48px;
+}
+.count-digit {
+    margin: 20px 0px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 100px;
+}
+.count-title {
+    font-size: 20px;
+}
