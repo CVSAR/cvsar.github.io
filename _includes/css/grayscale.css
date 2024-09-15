@@ -462,10 +462,14 @@ section {
 
 @media(max-width: 767px) {
 
+    .count-area {
+        padding-top: 40px;
+    }
+
     .count-area-content {
         display: block;
         width: 100%;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
 
     .count-digit {
