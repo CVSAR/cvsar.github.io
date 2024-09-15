@@ -452,12 +452,36 @@ section {
 .count-area i {
     font-size: 48px;
 }
+
 .count-digit {
-    margin: 20px 0px;
+    margin: 15px 0px;
     color: #fff;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 80px;
 }
+
+@media(max-width: 767px) {
+
+    .count-area-content {
+        display: block;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .count-digit {
+        font-size: 60px;
+        margin-bottom: 0;
+    }
+
+    .count-title {
+        font-size: 16px !important;
+    }
+
+    .counter-container {
+        flex-flow: column wrap;
+    }
+}    
+
 .count-title {
     font-size: 20px;
 }
