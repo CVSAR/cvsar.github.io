@@ -444,7 +444,9 @@ section {
 }
 
 .count-area-content {
-    margin-top: 30px;
+    display: inline-block;
+    text-align: center;
+    width: 25%;
 }
 
 .count-area i {
