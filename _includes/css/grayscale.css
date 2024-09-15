@@ -439,18 +439,18 @@ section {
 .count-area {
     position: relative;
     background:#000;
-    padding: 100px 0;
+    padding: 30px 0 0 0;
     color: #fff;
+}
+
+.count-area i {
+    font-size: 48px;
 }
 
 .count-area-content {
     display: inline-block;
     text-align: center;
     width: 25%;
-}
-
-.count-area i {
-    font-size: 48px;
 }
 
 .count-digit {
@@ -473,7 +473,7 @@ section {
     }
 
     .count-digit {
-        font-size: 60px;
+        font-size: 70px;
         margin-bottom: 0;
     }
 
