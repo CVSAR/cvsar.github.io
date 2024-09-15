@@ -450,11 +450,11 @@ section {
 .count-area-content {
     display: inline-block;
     text-align: center;
-    width: 25%;
+    width: 33.3333%;
 }
 
 .count-digit {
-    margin: 15px 0px;
+    margin-top: 15px;
     color: #fff;
     font-weight: 700;
     font-size: 80px;
