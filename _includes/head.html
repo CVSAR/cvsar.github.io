@@ -15,23 +15,15 @@
     <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
     <meta name="twitter:image" content="{% if page.image %}{{ site.url }}/{{ page.image }}{% else %}{{ site.url }}/img/cvsar-hero.jpg{% endif %}" />
     <meta name="twitter:card" content="summary_large_image" />
-    <!--End social meta tags-->
 
     <!--Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <!--End favicons-->
-
-    <!-- Zeffy donations script -->
-    <script src="https://zeffy-scripts.s3.ca-central-1.amazonaws.com/embed-form-script.min.js"></script>
 
     <!-- Custom CSS – Bootstrap Core CSS – Image gallery -->
     <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.12.0/baguetteBox.min.css">
-
-    <!-- JS – Image gallery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.12.0/baguetteBox.js" async></script>
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
