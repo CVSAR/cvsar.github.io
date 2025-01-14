@@ -6,6 +6,10 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    <!--Preloads-->
+    <link rel="preload" href="{{ '/style.css' | prepend: site.baseurl }}" as="style" />
+    <link rel="preload" href="{{ '/js/counter.js' | prepend: site.baseurl }}" as="script" />
+
     <!--Social meta tags-->
     <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
@@ -22,11 +26,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
     <!-- Custom CSS – Bootstrap Core CSS – Image gallery -->
-    <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/style.css' | prepend: site.baseurl }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.12.0/baguetteBox.min.css">
 
     <!-- Custom Fonts -->
-    <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/css/font-awesome/css/font-awesome.min.css' | prepend: site.baseurl }}">
     <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 </head>
