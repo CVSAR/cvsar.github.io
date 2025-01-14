@@ -1,0 +1,8 @@
+- name: "Volunteers"
+  number: 58
+
+- name: "Training hours per year"
+  number: 4780
+
+- name: "Mission hours per year"
+  number: 3645
