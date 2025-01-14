@@ -8,7 +8,11 @@
       <div class="gallery">
             {% for image in site.data.images %}
               <a href="{{ image.path | relative_url }}">
-                <img loading="lazy" class="img-responsive" src="{{ image.path | relative_url }}" alt="{{ image.alt }}" />
+                <picture>
+                  <source class="img-responsive" srcset="{{ image.path2 | relative_url }}" type="image/webp">
+                  <source class="img-responsive" srcset="{{ image.path | relative_url }}" type="image/jpeg"> 
+                  <img class="img-responsive" src="{{ image.path | relative_url }}" alt="{{ image.alt }}">
+                </picture>
               </a>  
             {% endfor %}
       </div>    
