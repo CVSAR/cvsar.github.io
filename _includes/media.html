@@ -1,0 +1,14 @@
+<!-- media -->
+<section id="media" class="container content-section text-center">
+        
+  <div class="row">
+    <div class="container center">
+      <h2>In the media</h2>
+            {% for media in site.data.media %}
+              <h3><a href="{{ media.link }}">{{ media.title }} ({{ media.media }})</a></h3>
+              <p class="caption">{{ media.date | date: "%m/%d/%Y" }}</p>
+            {% endfor %}
+          </div>    
+      </div>
+   </div> 
+</section>    

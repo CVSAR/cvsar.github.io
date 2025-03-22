@@ -489,3 +489,9 @@ section {
 .count-title {
     font-size: 20px;
 }
+
+.caption {
+    margin: -30px 0 45px;
+    font-size: 15px;
+    line-height: 1.6;
+}
