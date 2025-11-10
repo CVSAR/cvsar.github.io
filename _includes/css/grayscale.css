@@ -453,11 +453,15 @@ section {
     width: 33.3333%;
 }
 
-.count-digit {
+.counter {
     margin-top: 15px;
     color: #fff;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 70px;
+}
+
+.count-title {
+    font-size: 20px;
 }
 
 @media(max-width: 767px) {
@@ -472,7 +476,7 @@ section {
         margin-bottom: 2em;
     }
 
-    .count-digit {
+    .counter {
         margin-top: 0px;
         font-size: 60px;
     }
@@ -484,8 +488,4 @@ section {
     .counter-container {
         flex-flow: column wrap;
     }
-}    
-
-.count-title {
-    font-size: 20px;
 }

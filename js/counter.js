@@ -1,43 +1,43 @@
-document.addEventListener("DOMContentLoaded", function() {
-  var elements = document.querySelectorAll(".scroll-counter");
+// JavaScript
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
 
-  elements.forEach(function(item) {
-    item.counterAlreadyFired = false;
-    item.counterSpeed = item.getAttribute("data-counter-time") / 45;
-    item.counterTarget = +item.innerText;
-    item.counterCount = 0;
-    item.counterStep = item.counterTarget / item.counterSpeed;
+  const animateCounter = (counter) => {
+    const target = +counter.getAttribute("data-target");
+    const duration = 2000; // animation duration in ms
+    const frameRate = 60;
+    const totalFrames = Math.round((duration / 1000) * frameRate);
+    let frame = 0;
 
-    item.updateCounter = function() {
-      item.counterCount = item.counterCount + item.counterStep;
-      item.innerText = Math.ceil(item.counterCount);
+    const count = () => {
+      frame++;
+      const progress = frame / totalFrames;
+      const current = Math.round(target * easeOutQuad(progress));
+      counter.textContent = current.toLocaleString();
 
-      if (item.counterCount < item.counterTarget) {
-        setTimeout(item.updateCounter, item.counterSpeed);
+      if (frame < totalFrames) {
+        requestAnimationFrame(count);
       } else {
-        item.innerText = item.counterTarget;
+        counter.textContent = target.toLocaleString();
       }
     };
-  });
 
-  function isElementVisible(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
+    count();
+  };
 
-  function handleScroll() {
-    elements.forEach(function(item) {
-      if (item.counterAlreadyFired || !isElementVisible(item)) return;
-      item.updateCounter();
-      item.counterAlreadyFired = true;
-    });
-  }
+  const easeOutQuad = (t) => t * (2 - t); // easing function
 
-  window.addEventListener("scroll", handleScroll);
-  handleScroll();
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  counters.forEach((counter) => observer.observe(counter));
 });
